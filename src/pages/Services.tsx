@@ -8,7 +8,7 @@ const services: Service[] = [
     description: 'Corte y peinado profesional',
     duration: 30,
     price: 1500,
-    image: 'https://cdn.pixabay.com/photo/2021/11/15/12/40/haircut-6798031_1280.jpg'
+    image: 'https://res.cloudinary.com/dnnxgzqzv/image/upload/v1750193114/haircut-6798031_1280_wjgqpc.webp'
   },
   {
     id: '2',
@@ -16,7 +16,7 @@ const services: Service[] = [
     description: 'Renová tu estilo con actitud',
     duration: 120,
     price: 3500,
-    image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
+    image: 'https://res.cloudinary.com/dnnxgzqzv/image/upload/v1750193114/photo-1503951914875-452162b0f3f1_wtjp3g.webp'
   },
   {
     id: '3',
@@ -24,7 +24,7 @@ const services: Service[] = [
     description: 'Peinados con estilo y personalidad',
     duration: 45,
     price: 2000,
-    image: 'https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2024/11/28/17327852138719.jpg'
+    image: 'https://res.cloudinary.com/dnnxgzqzv/image/upload/v1750193115/17327852138719_kpb2pz.webp'
   },
   {
     id: '4',
@@ -32,7 +32,7 @@ const services: Service[] = [
     description: 'Tinte profesional con productos de calidad',
     duration: 60,
     price: 2500,
-    image: 'https://i.pinimg.com/736x/b7/40/43/b740431b8ae29ae68aca1cb27b7cbde7.jpg'
+    image: 'https://res.cloudinary.com/dnnxgzqzv/image/upload/v1750193114/b740431b8ae29ae68aca1cb27b7cbde7_nziast.webp'
   },
 ];
 
