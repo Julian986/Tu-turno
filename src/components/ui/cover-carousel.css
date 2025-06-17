@@ -1,0 +1,43 @@
+.swiper-slide {
+    transition: 
+      opacity 0.3s ease,
+      transform 0.3s ease !important;
+    transform-origin: center center;
+    opacity: 0.6;
+    filter: blur(1px);
+    transform: scale(0.9);
+  }
+  
+  .swiper-slide-active {
+    opacity: 1 !important;
+    filter: blur(0) !important;
+    transform: scale(1) !important;
+    z-index: 1;
+  }
+  
+  .swiper-slide-next,
+  .swiper-slide-prev {
+    opacity: 0.8 !important;
+    filter: blur(0.5px) !important;
+    transform: scale(0.95) !important;
+  }
+  
+  .custom-coverflow-swiper {
+    padding: 10px 0;
+  }
+  
+  .swiper-pagination {
+    bottom: 0 !important;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+    margin: 0 4px !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 16px !important;
+    border-radius: 4px !important;
+  }

@@ -1,0 +1,12 @@
+
+.fondoApp {
+    
+        position: relative;
+     /*    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/7518728/pexels-photo-7518728.jpeg'); */
+        background-size: cover;
+        background-position: center;
+       /*  background-color: #0a0a0a; */
+        background-color: #121212;
+    
+      
+}

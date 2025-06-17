@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;         /* #121212 */
+    --foreground: 0 0% 98%;        /* #FAFAFA */
+    --card: 0 0% 12%;              /* #1E1E1E */
+    --card-foreground: 0 0% 98%;   /* #FAFAFA */
+    --primary: 0 0% 100%;          /* #FFFFFF */
+    --primary-foreground: 0 0% 7%; /* #121212 */
+    --secondary: 0 0% 20%;         /* #333 */
+    --secondary-foreground: 0 0% 98%; /* #FAFAFA */
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 100%;           /* #FFFFFF */
+    --accent-foreground: 0 0% 7%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --radius: 1.2rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 0 0% 100%;          /* #FFFFFF */
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 0 0% 100%;           /* #FFFFFF */
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body, .fondoApp {
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Inter', 'Roboto', Arial, sans-serif;
+  }
+  input, select, textarea {
+    background: hsl(var(--secondary));
+    color: hsl(var(--foreground));
+    border-radius: 1rem;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+  input:focus, select:focus, textarea:focus {
+    outline: 2px solid hsl(var(--primary));
+  }
+  button, .btn {
+    border-radius: 1rem;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  }
+  .bg-card {
+    background: hsl(var(--card));
+  }
+  .text-muted-foreground {
+    color: #888 !important;
+  }
+}
