@@ -26,7 +26,7 @@ export default function Home() {
           <img src={barber} alt="avatar" className="w-12 h-12" />
           <div>
             <p className="text-xs text-muted-foreground">Bienvenido</p>
-            <h2 className="font-semibold text-lg">Barón Barberia </h2>
+            <h2 className="font-semibold text-lg">Tú Barberia </h2>
 
           </div>
         </div>
