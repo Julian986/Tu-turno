@@ -32,7 +32,7 @@ const mockServices: Service[] = [
     name: 'Corte de Cabello',
     description: 'Corte y peinado profesional',
     duration: 30,
-    price: 1500,
+    price: 15000,
     image: 'https://picsum.photos/400/300'
   },
   {
@@ -40,7 +40,7 @@ const mockServices: Service[] = [
     name: 'Coloración',
     description: 'Tinte profesional con productos de calidad',
     duration: 120,
-    price: 3500,
+    price: 25000,
     image: 'https://picsum.photos/400/301'
   },
 ];

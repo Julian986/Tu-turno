@@ -1,14 +1,14 @@
 import { MapPin, Clock, Phone, Instagram } from 'lucide-react';
 
 const businessInfo = {
-  address: 'Av. Siempreviva 742, Springfield',
+  address: 'Rawson 1874',
   hours: [
     { day: 'Lunes a Viernes', hours: '09:00 - 19:00' },
     { day: 'Sábados', hours: '09:00 - 17:00' },
     { day: 'Domingos', hours: 'Cerrado' },
   ],
-  phone: '+54 11 1234-5678',
-  whatsapp: '+54 11 1234-5678',
+  phone: '+54 2235484339',
+  whatsapp: '+54 2235484339',
   social: {
     instagram: '@tuturno',
     facebook: 'TuTurno Peluquería',

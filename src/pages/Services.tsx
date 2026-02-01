@@ -7,15 +7,15 @@ const services: Service[] = [
     name: 'Corte de pelo',
     description: 'Corte y peinado profesional',
     duration: 30,
-    price: 1500,
+    price: 15000,
     image: 'https://res.cloudinary.com/dnnxgzqzv/image/upload/v1750193114/haircut-6798031_1280_wjgqpc.webp'
   },
   {
     id: '2',
     name: 'Barba',
     description: 'Renová tu estilo con actitud',
-    duration: 120,
-    price: 3500,
+    duration: 20,
+    price: 10000,
     image: 'https://res.cloudinary.com/dnnxgzqzv/image/upload/v1750193114/photo-1503951914875-452162b0f3f1_wtjp3g.webp'
   },
   {
@@ -23,7 +23,7 @@ const services: Service[] = [
     name: 'Corte y barba',
     description: 'Peinados con estilo y personalidad',
     duration: 45,
-    price: 2000,
+    price: 20000,
     image: 'https://res.cloudinary.com/dnnxgzqzv/image/upload/v1750193115/17327852138719_kpb2pz.webp'
   },
   {
@@ -31,7 +31,7 @@ const services: Service[] = [
     name: 'Color',
     description: 'Tinte profesional con productos de calidad',
     duration: 60,
-    price: 2500,
+    price: 25000,
     image: 'https://res.cloudinary.com/dnnxgzqzv/image/upload/v1750193114/b740431b8ae29ae68aca1cb27b7cbde7_nziast.webp'
   },
 ];

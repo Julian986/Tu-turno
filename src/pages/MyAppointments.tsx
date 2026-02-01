@@ -32,7 +32,7 @@ const mockServices: Record<string, Service> = {
     name: 'Corte de Cabello',
     description: 'Corte y peinado profesional',
     duration: 30,
-    price: 1500,
+    price: 15000,
     image: 'https://cdn.pixabay.com/photo/2021/11/15/12/40/haircut-6798031_1280.jpg'
   },
   '2': {
@@ -40,7 +40,7 @@ const mockServices: Record<string, Service> = {
     name: 'Coloración',
     description: 'Tinte profesional con productos de calidad',
     duration: 120,
-    price: 3500,
+    price: 35000,
     image: 'https://i.pinimg.com/736x/b7/40/43/b740431b8ae29ae68aca1cb27b7cbde7.jpg'
   },
 };
@@ -49,12 +49,6 @@ export function MyAppointments() {
   const navigate = useNavigate();
   const { user } = useAuth();
   const [appointments, setAppointments] = useState(mockAppointments);
-
-  // Si no hay usuario, redirigir al login
-  if (!user) {
-    navigate('/login');
-    return null;
-  }
 
   const handleCancel = async (appointmentId: string) => {
     // Aquí iría la lógica para cancelar la reserva
@@ -102,8 +96,22 @@ export function MyAppointments() {
           <p className="text-zinc-400 text-sm">Gestiona tus reservas y citas</p>
         </div>
 
-        {/* Lista de turnos */}
+        {/* Contenido: login requerido o lista de turnos */}
         <div className="space-y-4">
+          {!user ? (
+            <div className="text-center py-12">
+              <div className="bg-[#111112] rounded-2xl p-8">
+                <p className="text-zinc-400 text-lg mb-4">Iniciá sesión para ver y gestionar tus turnos</p>
+                <button
+                  onClick={() => navigate('/login')}
+                  className="inline-flex items-center justify-center px-6 py-3 bg-white text-black rounded-xl font-bold shadow-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl"
+                >
+                  Iniciar sesión
+                </button>
+              </div>
+            </div>
+          ) : (
+          <>
           {appointments.map((appointment) => {
             const service = mockServices[appointment.serviceId];
             return (
@@ -173,6 +181,8 @@ export function MyAppointments() {
                 </button>
               </div>
             </div>
+          )}
+          </>
           )}
         </div>
       </div>
